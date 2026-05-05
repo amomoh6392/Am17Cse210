@@ -31,12 +31,10 @@ class Program
                 }
                 else
                 {
-                    Console.WriteLine("you guessed it"); 
-                    Console.WriteLine($"It took you {guess_count} guesses.")
+                    Console.WriteLine("you guessed it");
+                    Console.WriteLine($"It took you {guess_count} guesses.");
                 }
             }
-            
-             
             Console.Write("Do you want to continue? ");
             keep_playing = Console.ReadLine().ToLower();
         }
