@@ -40,7 +40,7 @@ public class Journal
         string[] lines = File.ReadAllLines(filename);
         foreach(string line in lines)
         {
-            string[] parts = line.Split("~|~");
+            string[] parts = line.Split(new string[] { "~|~" }, StringSplitOptions.None);
             if(parts.Length == 3)
             {
                 Entry entry = new Entry(parts[0], parts[1], parts[2]);
