@@ -16,10 +16,10 @@ public class Journal
     {
         if (_entries.Count == 0)
         {
-            Console.WriteLine("Your Journal nothing but an empty space.");
+            Console.WriteLine("Your Journal is nothing but an empty space.");
             return;
         }
-        foreach(Entry entry in _entries)
+        foreach (Entry entry in _entries)
         {
             entry.Display();
         }
@@ -37,10 +37,13 @@ public class Journal
     public void LoadFromFile(string filename)
     {
         _entries.Clear();
+
         string[] lines = File.ReadAllLines(filename);
+
         foreach(string line in lines)
         {
             string[] parts = line.Split(new string[] { "~|~" }, StringSplitOptions.None);
+            
             if(parts.Length == 3)
             {
                 Entry entry = new Entry(parts[0], parts[1], parts[2]);
