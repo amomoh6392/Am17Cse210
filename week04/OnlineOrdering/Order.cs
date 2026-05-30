@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 public class Order
 {
-    private List<Product> _product = new List<Product>();
+    private List<Product> _products = new List<Product>();
     private Customer _customer;
     public Order(Customer customer)
     {
@@ -10,12 +10,12 @@ public class Order
     }
     public void AddProduct(Product product)
     {
-        _product.Add(product);
+        _products.Add(product);
     }
     public double CalculateTotalCost()
     {
         double total = 0;
-        foreach (Product product in _product)
+        foreach (Product product in _products)
         {
             total += product.GetTotalCost();
         }
@@ -32,7 +32,7 @@ public class Order
     public string GetPackingLabel()
     {
         string label = "Packing Label for Order:\n";
-        foreach (Product product in _product)
+        foreach (Product product in _products)
         {
             label += $"{product.GetName()} - {product.GetProductId()}\n";
         }
