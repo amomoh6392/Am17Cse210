@@ -21,7 +21,7 @@ class Program
 
         video3.AddComment(new Comment("Grace", "The recipe looks delicious."));
         video3.AddComment(new Comment("Daniel", "I will try this today."));
-        video3.AddComment(new Comment("Sophia", "Thanks for sharing! i was able to make it because you posted it."));
+        video3.AddComment(new Comment("Sophia", "Thanks for sharing! i was able to make it because you posted it ."));
 
         video4.AddComment(new Comment("Abinadi", "Germany looks beautiful from the video."));
         video4.AddComment(new Comment("Sam", "Very informative video."));
