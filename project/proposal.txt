@@ -1,0 +1,85 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+    answer: Predictive Maintenance System for Industrial Machines
+
+2. What real-world problem will your program address or help to solve?
+    answer: This program address the problem of unexpected machine failure in Industrial environments.
+    usually machine often breaks down without warning, causing production delays, financial loss and safety risks.
+    The Predictive Maintenance System for Industrial Machines solves this by:
+        * Monitoring machine conditions such as temperature, vibration.
+        * It detect abnormal behavior early from the machine.
+        * It alerts users of any issues ,fault or failure before they occurs
+This program allows maintenance to be performed before breakdowns happen, improving efficiency, reducing cost and 
+increasing safety.
+
+3. What will you learn from developing this program?
+    answer:From developing this program, I will learn:
+        * How to design modular programs using functions
+        * How to separate logic from input/output
+        * How to analyze real-word data and apply decision-making logic
+        * How to write testable and reusable Python functions
+        * knowledge on the basic concept of predictive systems and automation
+
+4. What Python modules will your program use?
+    answer:
+        * csv: to store and read machine data logs
+        * Datetime
+        * random
+        * pytest
+
+        optional
+        * matplotlib
+
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. List the names of functions you will need?
+    answer:
+        testable and reusable functions:
+            * Evaluate_temperature(temp)
+            * Evaluate_vibration(vibration)
+            * Overall_status(temp_status, vib_status)
+            * is_critical(temp, vibration)
+            * generate_alert(status)
+        
+        Data handling Functions:
+            * read_machine_data(filename)
+            * write_machine_log(filename, data)
+        
+        Input/output function:
+            * get_user_input()
+            * display_result(result)
+        
+        Main controller
+            *main()
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. List the names of the test functions you will write.
+    answer:
+        * tets_evaluate_temperature()
+        * test_valuate_vibration()
+        * test_overall_status()
+        * test_is_critical()
+        * test_generate_alert()
+        * test_read_machine_data()
+        * test_write_machine_log()
+

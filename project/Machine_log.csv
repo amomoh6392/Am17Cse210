@@ -1,0 +1,7 @@
+Timestamp,Temperature,vibration,Status
+2026-04-08 11:39:57.593664,85.0,6.0,CRITICAL: Immediate maintenance required!
+2026-04-08 11:47:12.449970,84.0,3.0,CRITICAL: Immediate maintenance required!
+2026-05-03 07:49:48.145068,70.0,6.0,WARNING: Check machine soon.
+2026-05-03 07:49:59.178865,50.0,6.0,WARNING: Check machine soon.
+2026-05-03 07:50:00.344236,50.0,6.0,WARNING: Check machine soon.
+2026-05-03 07:50:04.482222,50.0,3.0,NORMAL: Machine is running well.
